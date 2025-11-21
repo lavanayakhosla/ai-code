@@ -13,7 +13,7 @@ export default function App() {
     setLoading(true);
     setExplanation('');
     try {
-      const res = await fetch('/api/explain', {
+      const res = await fetch('https://ai-code-1-57le.onrender.com/api/explain', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code, language, mode })
