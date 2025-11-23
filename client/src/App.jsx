@@ -31,16 +31,7 @@ export default function App() {
     }
   }
 
-  function handlePasteExample() {
-    setCode(`// Example: factorial
-function factorial(n) {
-  if (n < 0) throw new Error('n must be >= 0');
-  if (n === 0) return 1;
-  let res = 1;
-  for (let i = 1; i <= n; i++) res *= i;
-  return res;
-}`);
-  }
+
 
   return (
     <div className="container">
@@ -67,10 +58,7 @@ function factorial(n) {
           {loading ? 'Explaining...' : 'Explain code'}
         </button>
 
-        <button onClick={handlePasteExample} style={{ marginLeft: 8 }}>
-          Load example
-        </button>
-      </div>
+        
 
       <textarea
         className="code"
