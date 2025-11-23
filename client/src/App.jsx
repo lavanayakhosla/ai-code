@@ -59,7 +59,7 @@ export default function App() {
         </button>
 
         
-
+ </div>
       <textarea
         className="code"
         value={code}
@@ -69,7 +69,7 @@ export default function App() {
 
       <h3>Explanation</h3>
       <div className="output">{loading ? 'Waiting for explanation...' : explanation || 'No explanation yet.'}</div>
-      </div>
+     
       <footer style={{ marginTop: 20, color: '#666', fontSize: 13 }}>
         Tip: For large files, consider splitting into function-level chunks before sending.
       </footer>
